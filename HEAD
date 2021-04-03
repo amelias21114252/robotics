@@ -1,1 +1,22 @@
-ref: refs/heads/master
+from mblock import event
+
+total_cost = 0
+
+@event.greenflag
+def on_greenflag():
+    global total_cost
+    total_cost = 0
+    answer = sprite.input('Would you like 1 candy cane or 2 chocolate')
+    if sprite.answer == 1:
+        sprite.x = 80
+        sprite.y = -96
+        # not supported yet
+        total_cost = total_cost + 1.5
+
+    else:
+        # not supported yet
+        sprite.x = 109
+        sprite.y = 109
+        total_cost = total_cost + ((total_cost + 1.5))
+
+    # not implemented, yet
