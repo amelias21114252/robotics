@@ -104,5 +104,4 @@ void _loop() {
 void loop() {
   _loop();
 }
-//
 //I lined up my robot with the meter stick and started the program. The code begins with a 3-second wait to allow time for me to unplug the cable. Then I added green light to indicate the "go" sign. The robot then runs for 4.25 seconds at 100% power. Afterward, I added a wait for 6 seconds, then the robot runs back at the same time and power to grab the robot easily. Lastly, a red light shines to indicate the robot has stopped, and the program ends on a musical note.
